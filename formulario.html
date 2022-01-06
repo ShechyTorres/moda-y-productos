@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Imagenes/logo2-moda-y-productos.png" type="image/x-icon">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="css/estilos-formulario.css">
+</head>
+
+<body>
+  <section>
+    <aside class="llenado">
+      <form name="formulario">
+        <h2>FORMULARIO DE CONTACTO</h2>
+        <h5><label for="campos obligatorios" class="required">Estos campos son obligatorios</label></h5>
+        <label for="nombre1" class="required">Primer Nombre:</label><br>
+        <input type="text" placeholder="Escriba su nombre" required>
+        <br>
+        <label for="nombre2">Segundo Nombre:</label><br>
+        <input type="text" placeholder="Escriba su nombre">
+        <br>
+        <label for="apellido1" class="required">Primer Apellido:</label><br>
+        <input type="text" placeholder="Escriba su apellido" required>
+        <br>
+        <label for="apellido2">Segundo Apellido:</label><br>
+        <input type="text" placeholder="Escriba su apellido">
+        <br>
+        <label for="telefono" class="required">Celular/Telefono:</label><br>
+        <input type="tel" placeholder="Digite su numero" required>
+        <br>
+        <label for="gmail" class="required">Correo Electronico:</label><br>
+        <input type="email" placeholder="@email.com" required>
+        <br>
+        <label for="edad" class="required">Edad:</label>
+        <input type="number" name="tentacles" min="1" max="100" placeholder="Digite su edad" required>
+        <!-- <br>
+        <label for="sexo" class="required">Sexo:</label>
+        <select name="Sexo" required>
+          <option>Definir</option>
+          <option>Hombre</option>
+          <option>Mujer</option>
+        </select> -->
+        <br>
+        <p class="required">Sexo:</p>
+        <input type="radio" id="M" name="sexo" class="sexo">
+        <label for="M">Masculino</label><br class="br">
+        <input type="radio" id="F" name="sexo" class="sexo">
+        <label for="F">Femenino</label>
+        <br>
+        <br>
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea name="mensaje" id="" placeholder="Aqui escriba su mensaje"></textarea>
+        <br>
+        <input type="button" value="ENVIAR" id="btn">
+      </form>
+    </aside>
+  </section>
+</body>
+
+</html>

@@ -4,7 +4,7 @@ main {
 
 .top {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .nav-icon {
@@ -17,22 +17,23 @@ main {
   color: #ffffff;
 }
 
-a {
-  text-decoration: none;
-}
 
-.redes>a>i {
+/* a {
+  text-decoration: none;
+} */
+
+
+/* .redes>a>i {
   display: inline-flex;
-}
+} */
 
 .jumbotron {
-  background-image: url(https://media.revistagq.com/photos/5f0c4ef642f91a64e5690638/master/pass/Tendencias-PV-2021-colores.jpg);
+  background-image: url(imagen-general.png);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: #000000;
   height: 800px;
-  border: 1px solid red;
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
 }
 
 .jumbotron-text {
@@ -169,6 +170,10 @@ ul {
   margin-right: 15px;
 }
 
+.footer-social-icon a:hover {
+  text-decoration: none;
+}
+
 .footer-social-icon i {
   height: 40px;
   width: 40px;
@@ -216,6 +221,7 @@ ul {
 
 .footer-widget ul li a:hover {
   color: #ffffff;
+  text-decoration: none;
 }
 
 .footer-widget ul li a {
@@ -223,37 +229,36 @@ ul {
   text-transform: capitalize;
 }
 
-.subscribe-form {
-  position: relative;
-  overflow: hidden;
-}
-
-.subscribe-form input {
-  width: 100%;
-  padding: 14px 28px;
-  background: #2E2E2E;
-  border: 1px solid #2E2E2E;
-  color: #fff;
-}
-
-.subscribe-form button {
-  position: absolute;
-  right: 0;
+.boton-suscribete {
+  /* position: absolute;
+  right: 0; */
   background: #878787;
+  text-decoration: none;
+  color: #151414;
+  font-size: 18px;
   padding: 13px 20px;
   border: 1px solid #878787;
   top: 0;
 }
 
-.subscribe-form button:hover {
+.boton-suscribete:hover {
   background-color: #151414;
+  color: #ffffff;
 }
 
-.subscribe-form button i {
-  color: #fff;
-  font-size: 22px;
-  transform: rotate(-6deg);
+
+/* .a-suscribete:hover {
+  text-decoration: none;
+  color: #757575;
 }
+
+.a-suscribete,
+.boton-suscribete {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  
+} */
 
 .copyright-area {
   background: #202020;
@@ -277,6 +282,7 @@ ul {
 
 .footer-menu li:hover a {
   color: #ffffff;
+  text-decoration: none;
 }
 
 .footer-menu li a {
@@ -284,7 +290,8 @@ ul {
   color: #878787;
 }
 
-
-/* .center {
-  text-align: center;
-  /* border: 1px solid red; */
+@media(max-width:799px) {
+  nav {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,109 @@
+* {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+  /*border: 1px solid red;*/
+  background: linear-gradient(to bottom, black, rgb(75, 75, 75));
+}
+
+section {
+  /*border: 1px solid black;*/
+  height: 930px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.llenado {
+  width: 550px;
+  margin: auto;
+  background-color: white;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+}
+
+#btn {
+  background-color: rgb(20, 20, 110);
+  /* background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 0%, rgba(5, 96, 179, 1) 38%, rgba(9, 9, 121, 1) 68%); */
+  color: white;
+}
+
+#btn:hover {
+  background-color: #0560b3;
+  /* background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 26%, rgba(5, 96, 179, 1) 57%, rgba(0, 212, 255, 1) 98%); */
+  color: #000000;
+}
+
+#btn:hover {
+  cursor: pointer;
+}
+
+h2 {
+  text-align: center;
+}
+
+.required:after {
+  content: " *";
+  color: red;
+  font-weight: bold;
+}
+
+.sexo {
+  width: 14px;
+}
+
+.br {
+  display: none;
+}
+
+@media(max-width:480px) {
+  form {
+    width: 100%;
+  }
+}
+
+@media(max-width:368px) {
+  section {
+    height: 958px;
+  }
+}
+
+@media(max-width:250px) {
+  .br {
+    display: block;
+  }
+  section {
+    height: 995px;
+  }
+}
+
+@media(max-width:248px) {
+  section {
+    height: 1010px;
+  }
+}
+
+@media(max-width:211px) {
+  section {
+    height: 1020px;
+  }
+}
+
+@media(max-width:210px) {
+  section {
+    height: 1040px;
+  }
+}

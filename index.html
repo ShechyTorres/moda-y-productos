@@ -15,40 +15,10 @@
   <main>
     <header>
       <nav class="navbar navbar-inverse navbar-fixed-top">
+        <!-- Logo central -->
         <div class="container-fluid">
           <div class="top Page navigation">
-            <ul class="nav navbar-nav">
-              <li>
-                <a href="#" aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
-                </a>
-              </li>
-              <li><a href="#">Mujer <span class="sr-only">(current)</span></a></li>
-              <li><a href="#">Hombre</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tallas <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Talla S</a></li>
-                  <li><a href="#">Otra Talla</a></li>
-                  <li><a href="#">Otra Talla</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">Tallas Niños</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">Tallas Bebés</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#" aria-label="Next">
-                  <span aria-hidden="true">&raquo;</span>
-                </a>
-              </li>
-            </ul>
             <a href="index.html" class="logo-center"><img src="Imagenes/logo-moda-y-productos.png" alt="logo MyP" id="logo-pagina"></a>
-            <div class="redes">
-              <a href="#" class="redes-a"><i class="nav-icon icon-whatsapp"></i>3023453342</a>
-              <a href="#" class="redes-a"><i class="nav-icon glyphicon glyphicon-heart"></i>Mis Favoritos</a>
-              <a href="#" class="redes-a"><i class="nav-icon glyphicon glyphicon-shopping-cart"></i>Mi Carrito</a>
-            </div>
           </div>
         </div>
         <div class="container-fluid">
@@ -66,16 +36,15 @@
               <li class="active"><a href="#">Novedades <span class="label label-default">New </span></a></li>
               <li><a href="#">Tendencias</a></li>
               <li><a href="#">Ropa</a></li>
-              <li><a href="#">Vestidos</a></li>
               <li><a href="#">Zapatos</a></li>
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
-              <form class="navbar-form navbar-left">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Buscar">
+              <form class="navbar-form navbar-left" role="search">
+                <div class="form-group navbar-buscar">
+                  <input type="text" class="form-control navbar-buscar" placeholder="Buscar">
                 </div>
-                <button type="submit" class="btn btn-default">Buscar</button>
+                <button type="submit" class="btn btn-default btn-buscar">Buscar</button>
               </form>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span>Mi Cuenta <span class="caret"></span></a>
@@ -89,9 +58,7 @@
               </li>
             </ul>
           </div>
-          <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
       </nav>
     </header>
 
@@ -227,12 +194,8 @@
               <div class="footer-text mb-25">
                 <p> No se pierda de suscribirse a nuestros nuevos feeds, por favor complete el formulario a continuación. </p>
               </div>
-              <div class="subscribe-form">
-                <form action="#">
-                  <input type="text" placeholder="Correo electrónico">
-                  <button> <i class="fab fa-telegram-plane glyphicon glyphicon-send"> </i> </button>
-                </form>
-              </div>
+              <!-- <button type="button" class="boton-suscribete"><a href="formulario.html" target="_blank" class="a-suscribete">Suscribete</a></button> -->
+              <a href="formulario.html" target="_blank" class="a-suscribete"><button type="button" class="boton-suscribete">Suscribete</button></a>
             </div>
           </div>
         </div>
