@@ -17,7 +17,7 @@
         <h2>FORMULARIO DE CONTACTO</h2>
         <h5><label for="campos obligatorios" class="required">Estos campos son obligatorios</label></h5>
         <label for="nombre1" class="required">Primer Nombre:</label><br>
-        <input type="text" placeholder="Escriba su nombre" required>
+        <input type="text" name="nombre1" minlength="2" maxlength="40" placeholder="Escriba su nombre" required>
         <br>
         <label for="nombre2">Segundo Nombre:</label><br>
         <input type="text" placeholder="Escriba su nombre">
@@ -29,7 +29,7 @@
         <input type="text" placeholder="Escriba su apellido">
         <br>
         <label for="telefono" class="required">Celular/Telefono:</label><br>
-        <input type="tel" placeholder="Digite su numero" required>
+        <input type="tel" placeholder="Digite su numero" required pattern="[0-9]+">
         <br>
         <label for="gmail" class="required">Correo Electronico:</label><br>
         <input type="email" placeholder="@email.com" required>

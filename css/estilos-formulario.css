@@ -9,7 +9,8 @@ body {
 
 section {
   /*border: 1px solid black;*/
-  height: 930px;
+  /* height: 930px; */
+  height: 100%;
   display: flex;
   justify-content: center;
   margin: auto;
@@ -32,6 +33,23 @@ textarea {
   padding: 7px;
   box-sizing: border-box;
 }
+
+
+/* Validaciones de los input */
+
+
+/* input:valid,
+textarea:valid {
+  border: 1px solid green;
+}
+
+input:invalid,
+textarea:invalid {
+  border: 1px solid red;
+} */
+
+
+/* **** */
 
 #btn {
   background-color: rgb(20, 20, 110);
