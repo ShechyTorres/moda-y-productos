@@ -34,3 +34,7 @@ h2 {
   padding: 7px;
   border-radius: 10px;
 }
+
+#btn:hover {
+  transform: scale(1.1);
+}
