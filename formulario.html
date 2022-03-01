@@ -17,25 +17,25 @@
         <h2>FORMULARIO DE CONTACTO</h2>
         <h5><label for="campos obligatorios" class="required">Estos campos son obligatorios</label></h5>
         <label for="primernombre" class="required">Primer Nombre:</label><br>
-        <input type="text" name="primernombre" minlength="2" maxlength="20" placeholder="Escriba su nombre" required>
+        <input type="text" name="primernombre" placeholder="Escriba su nombre" required pattern="[A-Za-z0-9]{1,20}" title="Letras y números. Tamaño mínimo: 1. Tamaño máximo: 20">
         <br>
         <label for="segundonombre">Segundo Nombre:</label><br>
-        <input type="text" name="segundonombre" minlength="2" maxlength="20" placeholder="Escriba su nombre">
+        <input type="text" name="segundonombre" placeholder="Escriba su nombre" pattern="[A-Za-z]{2,20}" title="Solo letras. Tamaño mínimo: 2. Tamaño máximo: 20">
         <br>
         <label for="primerapellido" class="required">Primer Apellido:</label><br>
-        <input type="text" name="primerapellido" minlength="2" maxlength="20" placeholder="Escriba su apellido" required>
+        <input type="text" name="primerapellido" placeholder="Escriba su apellido" required pattern="[A-Za-z]{2,20}" title="Solo letras. Tamaño mínimo: 2. Tamaño máximo: 20">
         <br>
         <label for="segundoapellido">Segundo Apellido:</label><br>
-        <input type="text" name="segundoapellido" minlength="2" maxlength="20" placeholder="Escriba su apellido">
+        <input type="text" name="segundoapellido" minlength="2" maxlength="20" placeholder="Escriba su apellido" pattern="[A-Za-z]{2,20}" title="Solo letras. Tamaño mínimo: 2. Tamaño máximo: 20">
         <br>
         <label for="telefono" class="required">Celular/Telefono:</label><br>
-        <input type="tel" name="telefono" placeholder="Digite su numero" required>
+        <input type="tel" name="telefono" placeholder="Digite su numero" required pattern="[0-9]{10}" title="Solo numeros. Tamaño máximo: 10">
         <br>
         <label for="email" class="required">Correo Electronico:</label><br>
-        <input type="email" name="email" placeholder="@email.com" required>
+        <input type="email" name="email" placeholder="@email.com" required pattern="/^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/">
         <br>
         <label for="edad" class="required">Edad:</label>
-        <input type="number" name="edad" min="1" max="100" placeholder="Digite su edad" required>
+        <input type="number" name="edad" min="1" max="100" placeholder="Digite su edad" required pattern="[0-9]{1,100}">
         <br>
 
         <p class="required">Sexo:</p>
@@ -49,7 +49,7 @@
 
         <br>
         <label for="mensaje">Mensaje:</label><br>
-        <textarea name="mensaje" name="mensaje" id="" placeholder="Escriba aquí su mensaje"></textarea>
+        <textarea name="mensaje" id="" placeholder="Escriba aquí su mensaje"></textarea>
         <br>
 
         <input type="submit" value="ENVIAR" id="btn">
