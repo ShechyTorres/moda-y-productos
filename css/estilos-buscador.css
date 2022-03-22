@@ -1,0 +1,91 @@
+* {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.main {
+  background: linear-gradient(to bottom, black, rgb(75, 75, 75));
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  padding: auto;
+}
+
+.main_todos {
+  background: linear-gradient(to bottom, black, rgb(75, 75, 75));
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding-top: 20px;
+  /* justify-content: center; */
+  /* padding: auto; */
+}
+
+.boton {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  position: fixed;
+  font-size: 25px;
+  top: 10px;
+  left: 20px;
+}
+
+.boton:hover {
+  transform: scale(1.1);
+}
+
+.boton:active {
+  transform: translateY(4px);
+}
+
+.contenedor {
+  width: 400px;
+  margin: auto;
+  background-color: white;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.contenedor_todos {
+  display: table;
+  margin: auto;
+  background-color: white;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.div-btn {
+  text-align: center;
+}
+
+#input_buscar {
+  height: 30px;
+  width: 350px;
+  border-radius: 10px;
+  background-color: rgb(193, 216, 236);
+}
+
+#btn {
+  background-color: rgb(20, 20, 110);
+  color: white;
+  border-radius: 10px;
+  padding: auto;
+  height: 30px;
+  width: 80px;
+}
+
+#btn:hover {
+  transform: scale(1.1);
+}
+
+.navbar-buscar {
+  padding-bottom: 5px;
+}

@@ -6,6 +6,29 @@ body {
   background: linear-gradient(to bottom, black, rgb(75, 75, 75));
 }
 
+.boton {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  position: fixed;
+  font-size: 25px;
+  top: 10px;
+  left: 20px;
+}
+
+.boton:hover {
+  transform: scale(1.1);
+}
+
+.boton:active {
+  transform: translateY(4px);
+}
+
+
+/* .boton-regresar:hover {
+  transform: scale(1.1);
+} */
+
 section {
   /*border: 1px solid black;*/
   /* height: 930px; */
