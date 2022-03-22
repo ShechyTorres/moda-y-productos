@@ -8,16 +8,18 @@
   <link rel="shortcut icon" href="assets/img/logomini-moda-y-productos.png" type="image/x-icon">
   <title>Formulario</title>
   <link rel="stylesheet" href="css/estilos-formulario.css">
+  <link rel="stylesheet" href="css/fontello.css">
 </head>
 
 <body>
   <section>
+    <a href="index.html"><button type="button" class="boton">🢀</button></a>
     <aside class="llenado">
       <form name="formulario" action="registros.php" method="post">
         <h2>FORMULARIO DE CONTACTO</h2>
         <h5><label for="campos obligatorios" class="required">Estos campos son obligatorios</label></h5>
         <label for="primernombre" class="required">Primer Nombre:</label><br>
-        <input type="text" name="primernombre" placeholder="Escriba su nombre" required pattern="[A-Za-z0-9]{1,20}" title="Letras y números. Tamaño mínimo: 1. Tamaño máximo: 20">
+        <input type="text" name="primernombre" placeholder="Escriba su nombre" required pattern="[A-Za-z0-9]{1,20}" title="Letras y números. Tamaño mínimo: 1. Tamaño máximo: 20" autofocus="autofocus">
         <br>
         <label for="segundonombre">Segundo Nombre:</label><br>
         <input type="text" name="segundonombre" placeholder="Escriba su nombre" pattern="[A-Za-z]{2,20}" title="Solo letras. Tamaño mínimo: 2. Tamaño máximo: 20">
@@ -44,7 +46,7 @@
         <input type="radio" name="sexo" value="femenino" class="sexo">
         <label for="F">Femenino</label>
         <input type="radio" name="sexo" value="otros" class="sexo" checked>
-        <label for="F">Otro</label>
+        <label for="O">Otro</label>
         <br>
 
         <br>
